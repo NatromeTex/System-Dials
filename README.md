@@ -39,3 +39,4 @@ Download the latest release, extract the archive and place the files in your liv
 * More dial types and frames to be added in the future
 
 * 30fps lock in the settings does NOT work and will be fixed
+
