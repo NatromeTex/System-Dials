@@ -7,7 +7,6 @@
 
 [![GitHub release](https://img.shields.io/github/release/NatromeTex/System-Dials/all.svg)](https://github.com/NatromeTex/System-Dials/releases)
 
-usage
 ## Contents
 - [About](#about)
 - [Features](#features)
