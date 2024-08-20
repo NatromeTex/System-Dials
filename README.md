@@ -5,7 +5,7 @@
   <img alt="Files Logo" src="./lplowirl.jpg" width="450" />
 </p>
 
-[![GitHub release](https://img.shields.io/github/release/NatromeTex/System-Dials/all.svg)](https://github.com/NatromeTex/System-Dials/releases)
+[![GitHub release](https://img.shields.io/github/v/release/NatromeTex/System-Dials)](https://github.com/NatromeTex/System-Dials/releases)
 
 ## Contents
 - [About](#about)
