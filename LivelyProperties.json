@@ -1,0 +1,26 @@
+{
+    "outerArcThickness":{
+    "max": 100,
+    "min": 0,
+    "tick": 1,
+    "text": "Dial Thickness",
+    "type": "slider",
+    "value": 20
+    },
+    "speedArcColor1":{
+        "text": "Arc Start Color",
+        "type": "color",
+        "value": "#69acdb"
+    },
+    "speedArcColor2":{
+        "text": "Arc End Color",
+        "type": "color",
+        "value": "#69db8a"
+    },
+    "fps":{
+        "type": "checkbox",
+        "value": "false",
+        "text": "fps lock"
+    }
+
+}
