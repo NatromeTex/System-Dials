@@ -2,7 +2,7 @@
 <h2>System-Dials</h2>
 </p>
 <p align="center">
-  <img alt="Files Logo" src="./Lplowirl.jpg" width="450" />
+  <img alt="Files Logo" src="./lplowirl.jpg" width="450" />
 </p>
 
 [![GitHub release](https://img.shields.io/github/release/NatromeTex/System-Dials/all.svg)](https://github.com/NatromeTex/System-Dials/releases)
@@ -25,8 +25,8 @@ An animated wallpaper made using lively hardware API showing system usage info o
 * Automatic query of system stats.
 
 ## Download
-##### [Get Lively)](https://github.com/rocksdanister/lively/releases)
-##### [Get System Dials)](https://github.com/NatromeTex/System-Dials/releases)
+##### [Get Lively](https://github.com/rocksdanister/lively/releases)
+##### [Get System Dials](https://github.com/NatromeTex/System-Dials/releases)
 
 ## Install Instructions
 
