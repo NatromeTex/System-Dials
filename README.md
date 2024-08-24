@@ -22,6 +22,7 @@ An animated wallpaper made using lively hardware API showing system usage info o
 
 * Customisible Color.
 * Automatic query of system stats.
+* Two customisible dials.
 
 ## Download
 ##### [Get Lively](https://github.com/rocksdanister/lively/releases)
@@ -33,9 +34,13 @@ Download the latest release, extract the archive and place the files in your liv
 
 ## Support
 
-* GPU and CPU names are being extracted from larger names. If your CPU or GPU shows up as "Unkown", please open an issue and include your CPU/GPU name as it shows in your system.
+* GPU and CPU names are being extracted from larger names. If your CPU or GPU shows up as "Unknown", please open an issue and include your CPU/GPU name as it shows in your system.
 
-* More dial types and frames to be added in the future
+* More dial types and frames to be added in the future.
 
-* 30fps lock in the settings does NOT work and will be fixed
+* 30fps lock in the settings does NOT work and will be fixed.
+
+* Dial needle appears to flicker between updates, will be fixed in future.
+
+* COntributions are welcome.
 
