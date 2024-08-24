@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto Mono';
-    src: url('fonts/RobotoMono.ttf') format('truetype');
+    src: url('../fonts/RobotoMono.ttf') format('truetype');
     font-weight: 500;
 }
 html,body{

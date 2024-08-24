@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>System-Dials</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../styles/dial1.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="gpu-gauge-container">
+                <div class="gpu-gauge-arc">
+                  <svg width="350" height="350" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="white" stroke-width="5">
+                      <line x1="175" y1="50" x2="175" y2="20"/>
+                      <line x1="175" y1="50" x2="175" y2="20" transform="rotate(-27, 175, 175)"/>
+                      <line x1="175" y1="50" x2="175" y2="20" transform="rotate(-54, 175, 175)"/>
+                      <line x1="175" y1="50" x2="175" y2="20" transform="rotate(-81, 175, 175)"/>
+                      <line x1="175" y1="50" x2="175" y2="20" transform="rotate(-108, 175, 175)"/>
+                      <line x1="175" y1="50" x2="175" y2="20" transform="rotate(-135, 175, 175)"/>      
+                    </g>
+                    <g stroke="white" stroke-width="2">
+                      <line x1="175" y1="40" x2="175" y2="20" transform="rotate(-40.5, 175, 175)"/>
+                      <line x1="175" y1="40" x2="175" y2="20" transform="rotate(-67.5, 175, 175)"/>
+                      <line x1="175" y1="40" x2="175" y2="20" transform="rotate(-94.5, 175, 175)"/>
+                      <line x1="175" y1="40" x2="175" y2="20" transform="rotate(-121.5, 175, 175)"/>
+                    </g>
+                    <g stroke="red" stroke-width="6">
+                      <line x1="175" y1="50" x2="175" y2="20"/>
+                    </g>
+                    <g stroke="red" stroke-width="3">
+                      <line x1="175" y1="40" x2="175" y2="20" transform="rotate(-13.5, 175, 175)"/>
+                    </g>    
+                  </svg>
+                </div>
+                <div class="gpu-gauge-needle">
+                  <svg width="350" height="350" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="173,175 174,45 176,45 177,175" fill="red" />
+                    <circle cx="175" cy="175" r="20" fill="rgb(10,10,10)"/>
+                  </svg>
+                </div>
+                <div class="gpu-gauge-canvas">
+                  <canvas class="gpu-gauge-numbers" width="350px" height="350px"></canvas>
+              </div>
+              <div class="gpu-gauge-text">
+                <span class="gauge-text" id ="gpu-gauge-text">0%</span><br>
+                <span class="gauge-text" id ="gpu-id-text"></span>
+              </div>
+            </div>
+            <div class="cpu-gauge-container">
+              <div class="cpu-gauge-arc">
+                <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="white" stroke-width="5">
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(81, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(54, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(27, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(-27, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(-54, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(-81, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(-108, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(-135, 250, 250)"/>
+                  </g>
+                  <g stroke="white" stroke-width="2">
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(94.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(67.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(40.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(13.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(-13.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(-40.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(-67.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(-94.5, 250, 250)"/>
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(-121.5, 250, 250)"/>
+                  </g>
+                  <g stroke="red" stroke-width="6">
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(135, 250, 250)"/>
+                    <line x1="250" y1="50" x2="250" y2="20" transform="rotate(108, 250, 250)"/>
+                  </g>
+                  <g stroke="red" stroke-width="3">
+                    <line x1="250" y1="40" x2="250" y2="20" transform="rotate(121.5, 250, 250)"/>
+                  </g>
+                </svg>                
+              </div>
+              <div class="cpu-gauge-needle">
+                <svg width="500" height="500" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="173,175 174,45 176,45 177,175" fill="red" />
+                  <circle cx="175" cy="175" r="15" fill="rgb(10,10,10)"/>
+                </svg>
+              </div>
+              <div class="cpu-gauge-canvas">
+                <canvas class="cpu-gauge-numbers" width="500px" height="500px"></canvas>
+            </div>
+            <div class="cpu-gauge-text">
+              <span class="gauge-text" id ="cpu-gauge-text">0%</span><br>
+              <span class="gauge-text" id ="cpu-id-text"></span>
+            </div>
+            </div>
+            <div class="ram-gauge-container">
+              <div class="ram-gauge-arc">
+                <svg width="350" height="350" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="white" stroke-width="5">
+                    <line x1="175" y1="50" x2="175" y2="20"/>
+                    <line x1="175" y1="50" x2="175" y2="20" transform="rotate(33.75, 175, 175)"/>
+                    <line x1="175" y1="50" x2="175" y2="20" transform="rotate(67.5, 175, 175)"/>
+                    <line x1="175" y1="50" x2="175" y2="20" transform="rotate(101.25, 175, 175)"/>
+                    <line x1="175" y1="50" x2="175" y2="20" transform="rotate(135, 175, 175)"/>      
+                  </g>
+                  <g stroke="white" stroke-width="2">
+                    <line x1="175" y1="40" x2="175" y2="20" transform="rotate(50.625, 175, 175)"/>
+                    <line x1="175" y1="40" x2="175" y2="20" transform="rotate(84.345, 175, 175)"/>
+                    <line x1="175" y1="40" x2="175" y2="20" transform="rotate(118.125, 175, 175)"/>
+                  </g>
+                  <g stroke="red" stroke-width="6">
+                    <line x1="175" y1="50" x2="175" y2="20"/>
+                  </g>
+                  <g stroke="red" stroke-width="3">
+                    <line x1="175" y1="40" x2="175" y2="20" transform="rotate(16.875, 175, 175)"/>
+                  </g>    
+                </svg>
+              </div>
+              <div class="ram-gauge-needle">
+                <svg width="350" height="350" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="173,175 174,45 176,45 177,175" fill="red" />
+                  <circle cx="175" cy="175" r="20" fill="rgb(10,10,10)"/>
+                </svg>
+              </div>
+              <div class="ram-gauge-canvas">
+                <canvas class="ram-gauge-numbers" width="350px" height="350px"></canvas>
+            </div>
+            <div class="ram-gauge-text">
+              <span class="gauge-text" id ="ram-gauge-text">0GB</span><br>
+            </div>
+          </div>
+        </div>
+        <script src="../script/dial1.js"></script>
+    </body>
+</html>

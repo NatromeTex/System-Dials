@@ -10,7 +10,7 @@ ctxgpu.font = '15px "Roboto Mono"';
 const centerX = canvascpu.width / 2;
 const centerY = canvascpu.height / 2;
 const radius = centerX - 20;
-const speedIncrement = 0.01;
+const speedIncrement = 0.1;
 var gradientStarCol = "#69acdb";
 var gradientEndCol = "#69db8a";
 var cpuSpeed = 0;
@@ -211,7 +211,12 @@ function livelyPropertyListener(name, val)
       break;
     case "speedArcColor2":
       gradientEndCol = val;
-      break;     
+      break;
+    case "dialSelect":
+        if(val == 1){
+            window.location.href = "dial1.html";
+        }
+        break;     
   }
 }
 
@@ -221,12 +226,8 @@ function livelySystemInformation(data) {
     gpuSpeed = obj.CurrentGpu3D;
     maxRam = obj.TotalRam/1024;
     ramUsage = (obj.TotalRam-obj.CurrentRamAvail)/1024;
-    if(!init){
-        cpuName = extractCpuModel(obj.NameCpu);
-        gpuName = extractGpuModel(obj.NameGpu);
-        init = true;
-        initialise();
-    }
+    cpuName = extractCpuModel(obj.NameCpu);
+    gpuName = extractGpuModel(obj.NameGpu);
     animateCpuGauge();
     animateGpuGauge();
     animateRamGauge();
@@ -263,30 +264,6 @@ function extractGpuModel(gpuString) {
     return "Unknown";
 }
 
-function initialise(){
-    cpuSpeed = 0;
-    gpuSpeed = 0;
-    ramUsage = 0;
-    animateCpuGauge();
-    animateGpuGauge();
-    animateRamGauge();
-    setTimeout(()=>{
-        cpuSpeed=100;
-        gpuSpeed=100;
-        ram=maxRam;
-        animateCpuGauge();
-        animateGpuGauge();
-        animateRamGauge();
-    }, 2000);
-    setTimeout(()=>{
-        cpuSpeed=0;
-        gpuSpeed=0;
-        ram=0;
-        animateCpuGauge();
-        animateGpuGauge();
-        animateRamGauge();
-    }, 4000);
-}
 animateCpuGauge();
 animateGpuGauge();
 animateRamGauge();

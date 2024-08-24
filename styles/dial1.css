@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono.ttf') format('truetype');
+    font-weight: 500;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.gpu-gauge-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.gpu-gauge-arc, .gpu-gauge-needle, .gpu-gauge-canvas {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    transform-origin: 50% 50%; /* Center of the SVG */
+}
+
+.gpu-gauge-needle {
+    transform: rotateZ(-135deg); /* Shift to the right and up, and rotate */
+}
+
+.cpu-gauge-container {
+    position: relative;
+    width: 500px;
+    height:500px;
+}
+
+.cpu-gauge-arc, .cpu-gauge-needle, .cpu-gauge-canvas {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    transform-origin: 50% 50%; /* Center of the SVG */
+}
+
+.cpu-gauge-needle {
+    transform: rotateZ(-135deg); /* Shift to the right and up, and rotate */
+}
+
+.ram-gauge-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.ram-gauge-arc, .ram-gauge-needle, .ram-gauge-canvas {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    transform-origin: 50% 50%; /* Center of the SVG */
+}
+
+.ram-gauge-needle {
+    transform: rotateZ(135deg); /* Shift to the right and up, and rotate */
+}
+
+.cpu-gauge-text, .gpu-gauge-text, .ram-gauge-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.gauge-text {
+    font-size: "15px";
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    color: "#a4a4a4";
+}

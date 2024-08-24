@@ -17,6 +17,12 @@
         "type": "color",
         "value": "#69db8a"
     },
+    "dialSelect":{
+        "type": "dropdown",
+        "value": 0,
+        "text": "Dial Select",
+        "items": ["Gradient Dials", "Car Dials"]
+    },
     "fps":{
         "type": "checkbox",
         "value": "false",
