@@ -42,5 +42,5 @@ Download the latest release, extract the archive and place the files in your liv
 
 * Dial needle appears to flicker between updates, will be fixed in future.
 
-* COntributions are welcome.
+* Contributions are welcome.
 
