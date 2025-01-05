@@ -239,7 +239,7 @@ function extractCpuModel(cpuString) {
         return match ? match[1] : null;
     }
     if (/AMD/.test(cpuString)) {
-        const amdRegex = /AMD\s+(Ryzen\s+\d+\s+\d+)/;
+        const amdRegex = /AMD\s+(Ryzen\s+\d+\s+\d+(?:G|X|GE|XT|HS|HX)?)\b/;
         const match = cpuString.match(amdRegex);
         return match ? match[1] : null;
     }
